@@ -8,7 +8,8 @@ public class PosterManager {
         this.limit = limit;
     }
 
-    public PosterManager() {}
+    public PosterManager() {
+    }
 
     public void add(PosterItem item) {
         PosterItem[] tmp = new PosterItem[items.length + 1];
@@ -37,7 +38,7 @@ public class PosterManager {
 
     public PosterItem[] findLast() {
         int resultLength;
-        if (limit > items.length)  {
+        if (limit > items.length) {
             resultLength = items.length;
         } else {
             resultLength = limit;
